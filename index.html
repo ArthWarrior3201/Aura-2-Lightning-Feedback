@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Aura-2-Lightning Feedback</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="hero">
+      <div class="badge">AURA AI</div>
+
+      <h1>Aura-2-Lightning</h1>
+
+      <p class="subtitle">
+        Help make Aura-2-Lightning better.
+      </p>
+
+      <p class="description">
+        Tried Aura-2-Lightning? Tell us what worked,
+        what didn't, and what you'd like improved.
+      </p>
+    </div>
+
+
+    <form id="feedbackForm" class="feedback-card">
+
+      <div class="section">
+
+        <label class="main-label">
+          How would you rate Aura-2-Lightning?
+        </label>
+
+        <div class="rating" id="rating">
+
+          <button type="button" data-rating="1">★</button>
+          <button type="button" data-rating="2">★</button>
+          <button type="button" data-rating="3">★</button>
+          <button type="button" data-rating="4">★</button>
+          <button type="button" data-rating="5">★</button>
+
+        </div>
+
+        <input
+          type="hidden"
+          id="ratingValue"
+          value=""
+        >
+
+      </div>
+
+
+      <div class="section">
+
+        <label for="name">
+          Name
+          <span>Optional</span>
+        </label>
+
+        <input
+          id="name"
+          type="text"
+          maxlength="80"
+          placeholder="Anonymous"
+        >
+
+      </div>
+
+
+      <div class="section">
+
+        <label for="liked">
+          What did you like?
+        </label>
+
+        <textarea
+          id="liked"
+          maxlength="3000"
+          placeholder="What did Aura-2-Lightning do well?"
+        ></textarea>
+
+      </div>
+
+
+      <div class="section">
+
+        <label for="problems">
+          Did you notice any problems?
+        </label>
+
+        <textarea
+          id="problems"
+          maxlength="3000"
+          placeholder="Wrong answers, bugs, strange responses, etc."
+        ></textarea>
+
+      </div>
+
+
+      <div class="section">
+
+        <label for="improvements">
+          What should we improve?
+        </label>
+
+        <textarea
+          id="improvements"
+          maxlength="3000"
+          placeholder="Reasoning, coding, knowledge, speed..."
+        ></textarea>
+
+      </div>
+
+
+      <div class="section">
+
+        <label for="comments">
+          Anything else?
+          <span>Optional</span>
+        </label>
+
+        <textarea
+          id="comments"
+          maxlength="3000"
+          placeholder="Extra feedback..."
+        ></textarea>
+
+      </div>
+
+
+      <button
+        id="submitButton"
+        class="submit-button"
+        type="submit"
+      >
+        Submit Feedback
+      </button>
+
+
+      <div
+        id="status"
+        class="status"
+        aria-live="polite"
+      ></div>
+
+    </form>
+
+
+    <footer>
+      Aura-2-Lightning Feedback
+    </footer>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
